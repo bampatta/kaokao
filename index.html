@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Count Game</title>
+    <style>
+      #timerBar {
+        width: 100%;
+        height: 20px;
+        background-color: #f0f0f0;
+      }
+
+      #timerBarFill {
+        height: 100%;
+        background-color: #af724c;
+        transition: width 1s linear;
+      }
+    </style>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="startPage">
+      <h1>KAO KAO</h1>
+      <img src="./img/ตัวเล่น.PNG" alt="" width="220px" height="300px" /></button
+      ><br />
+      <button id="startBtn"><p>Start Game</p></button>
+    </div>
+
+    <div id="gamePage" style="display: none;">
+      <div class="score">
+        <img src="./img/St.PNG" alt="" width="200%" height="220%" />
+        <p id="count">0</p>
+      </div>
+  
+      <div class="timer">
+        <img src="./img/Score.PNG" alt="" width="5%" height="15%" />
+        <div id="timerBar">
+          <div id="timerBarFill"></div>
+        </div>
+      </div>
+
+      <button id="clickBtn">
+        <img src="./img/ตัวเล่น.PNG" alt="" width="50%" height="65%" /></button
+      ><br />
+      <button id="backBtn"><ion-icon name="refresh-outline"></ion-icon></button>
+    </div>
+
+    <div id="endPage">
+      <h1>Game Over</h1>
+      <p>Final Score: <span id="finalScore"></span></p>
+      <div id="imageContainer"></div>
+      <br />
+      <button id="Share">
+        <ion-icon name="share-social-outline"></ion-icon>
+      </button>
+      <button id="playAgainBtn">
+        <ion-icon name="refresh-outline"></ion-icon>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+  </body>
+</html>
